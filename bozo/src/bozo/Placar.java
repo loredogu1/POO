@@ -17,12 +17,17 @@ public class Placar {
 	}
 	
 	public void add(int novo) {
-		this.placarAtual = this.placarAtual + novo;
+		
 	}
 	
 	
 	public int getScore() {
-		return this.placarAtual;
+		int result= 0;
+		for(int i =0 ; i< 10; i++) {
+			result += this.placarAtual[i];
+		}
+		
+		return result;
 	}
 	
 }
