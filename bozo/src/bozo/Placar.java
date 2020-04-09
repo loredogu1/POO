@@ -16,8 +16,11 @@ public class Placar {
 		return result;
 	}
 	
-	public void add(int novo) {
-		
+	public void add(int pos) {
+		if(pos > 0 && pos < 11) {
+			
+		}
+			
 	}
 	
 	
