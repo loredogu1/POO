@@ -6,10 +6,10 @@ public class RolaDados {
 	
 	public RolaDados(int quant) {
 		if (quant  > 0) { // tem que ser acima de 1 dado pra rolar
-			quantLados = quant;
-			dados = new Dado[quantLados];
+			this.quantLados = quant;
+			this.dados = new Dado[quantLados];
 			for(int i =0; i < quant;i++) {
-				dados[i] = new Dado();
+				this.dados[i] = new Dado();
 			}
 			
 		}else {
@@ -17,5 +17,12 @@ public class RolaDados {
 		}
 	}
 	
-	
+    public int[] rolar () {
+        int mostra[];
+        mostra = new int[quantLados];
+        for (int i = 0; i < quantLados; i++) {
+            mostra[i] = dados[i].rolar();
+        }
+        return mostra;
+    }
 }
