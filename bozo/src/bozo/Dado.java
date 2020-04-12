@@ -91,6 +91,6 @@ public class Dado {
 			}
 			
 			
-		return visaolados; 
+		return visaolados; // retorna tudo certo
 	}
 }

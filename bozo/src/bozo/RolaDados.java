@@ -17,7 +17,7 @@ public class RolaDados {
 		}
 	}
 	
-    public int[] rolar () {
+    public int[] rolar () { // rola a quantidade de dados que ele quer
         int mostra[];
         mostra = new int[quantLados];
         for (int i = 0; i < quantLados; i++) {
@@ -25,4 +25,7 @@ public class RolaDados {
         }
         return mostra;
     }
+    
+    
+    
 }
