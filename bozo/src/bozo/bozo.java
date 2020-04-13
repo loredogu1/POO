@@ -59,7 +59,7 @@ public class bozo {
 
             try {
             	
-                placar.add( result, pos); // add ao placar o resultado
+                placar.add( result, pos); // add ao placar o resultado  na posição possivel
                 
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());

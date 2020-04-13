@@ -66,13 +66,14 @@ public class RolaDados {
             	result+="\n";
         }
 
-        for(int i=0; i< 5; i++) {
+        for(int i=0; i< 5; i++) { // muda o dado que vai ser impresso
             if (dados[i].getLado() == 1 || dados[i].getLado() == 3 || dados[i].getLado() == 5)
-            	result+="|  *  |  ";
-            else if (dados[i].getLado() == 6)  
+            	result += "|  *  |  ";
+            else if (dados[i].getLado() == 6) {// se o lado de cima for igual ao a 6
             	result+="|*   *|  ";
+            }
             else
-            	result+="|     |  ";
+            	result+="|     |  "; // muda a string
             if (i == 4)
             	result+="\n";
         }

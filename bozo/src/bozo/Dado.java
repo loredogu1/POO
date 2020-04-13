@@ -19,7 +19,7 @@ public class Dado {
 	public Dado() { // defeat com 6 lados
 		lados = 6;
 		rand = new Random();
-		rolar(); // rola os dados
+		rolar(); // rola os dados usando a classe rondom
 	}
 	
 	public Dado(int n) { // construtor que usar mais/menos de 6 lados
@@ -37,7 +37,7 @@ public class Dado {
 	
 	public String toString() {
 		String visaolados = ""; 
-			switch (this.LadoCima) { // ver qual lado vai ser impresso
+			switch (this.LadoCima) { // ver qual lado vai ser impresso  e mudado
 			case 1:
 					visaolados += "+-----+\n"; 
 					visaolados += "|     |\n"; 
