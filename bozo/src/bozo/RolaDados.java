@@ -1,3 +1,6 @@
+// igor guilherme pereira loredo
+// 11275071
+
 package bozo;
 
 public class RolaDados {
@@ -50,12 +53,12 @@ public class RolaDados {
     
     public String toString () { // desenha cada caso
 
-        String result = " 1 ----- 2 ------ 3 ------ 4 ------ 5\n+-----+  +-----+  +-----+  +-----+  +-----+\n";
+        String result = "- 1 ----- 2 ------ 3 ------ 4 ------ 5-\n+-----+  +-----+  +-----+  +-----+  +-----+\n";
         
         for(int i=0; i< 5; i++) {
-            if (dados[i].getLado() == 1) 
-            	
+            if (dados[i].getLado() == 1)             	
             	result +="|     |  ";
+            
             else if (dados[i].getLado() == 2 || dados[i].getLado() == 3) 
             	result+="|*    |  ";
             
@@ -74,15 +77,22 @@ public class RolaDados {
             }
             else
             	result+="|     |  "; // muda a string
-            if (i == 4)
+            
+             if (i == 4) {
             	result+="\n";
+            }
         }
 
         for(int i=0; i< 5; i++) {
-            if (dados[i].getLado() == 2 || dados[i].getLado() == 3) result+="|    *|  ";
-            else if (dados[i].getLado() == 1) result+="|     |  ";
-            else result+="|*   *|  ";
-            if (i == 4) result+="\n";
+            if (dados[i].getLado() == 2 || dados[i].getLado() == 3) 
+            	result+="|    *|  ";
+            else if (dados[i].getLado() == 1)
+            	result+="|     |  ";
+            else 
+            	result+="|*   *|  ";
+            
+            if (i == 4)
+            	result+="\n";
         }
 
         result += "+-----+  +-----+  +-----+  +-----+  +-----+ \n";

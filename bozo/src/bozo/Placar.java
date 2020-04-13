@@ -1,3 +1,7 @@
+// igor guilherme pereira loredo
+// 11275071
+
+
 package bozo;
 
 public class Placar {
@@ -18,7 +22,7 @@ public class Placar {
 			 switch (pos) {
 				 case 1:
 					 if (placarAtual[0] != -1)
-						 throw new IllegalArgumentException("Posição ocupada.");
+						 throw new IllegalArgumentException("Posicao ocupada.");
 	                 else {
 	                     int result = 0;
 	                     for(int i = 0; i<5; i++){
@@ -30,7 +34,7 @@ public class Placar {
 					break;
 				 case 2:
 						 if (placarAtual[1] != -1)
-							 throw new IllegalArgumentException("Posição ocupada.");
+							 throw new IllegalArgumentException("Posicao ocupada.");
 		                 else {
 		                     int result = 0;
 		                     for(int i = 0; i<5; i++){
@@ -43,7 +47,7 @@ public class Placar {
 					 
 				 case 3 :
 						 if (placarAtual[2] != -1)
-							 throw new IllegalArgumentException("Posição ocupada.");
+							 throw new IllegalArgumentException("Posicao ocupada.");
 		                 else {
 		                     int result = 0;
 		                     for(int i = 0; i<5; i++){
@@ -56,7 +60,7 @@ public class Placar {
 					break;
 				 case 4:
 					 if (placarAtual[3] != -1)
-						 throw new IllegalArgumentException("Posição ocupada.");
+						 throw new IllegalArgumentException("Posicao ocupada.");
 	                 else {
 	                     int result = 0;
 	                     for(int i = 0; i<5; i++){
@@ -69,7 +73,7 @@ public class Placar {
 					 break;
 				 case 5:
 					 if (placarAtual[4] != -1)
-						 throw new IllegalArgumentException("Posição ocupada.");
+						 throw new IllegalArgumentException("Posicao ocupada.");
 	                 else {
 	                     int result = 0;
 	                     for(int i = 0; i<5; i++){
@@ -82,7 +86,7 @@ public class Placar {
 					 
 				 case 6: // sequencia com 6 
 					 if (placarAtual[5] != -1)
-						 throw new IllegalArgumentException("Posição ocupada.");
+						 throw new IllegalArgumentException("Posicao ocupada.");
 	                 else {
 	                     int result = 0;
 	                     for(int i = 0; i<5; i++){
@@ -166,7 +170,7 @@ public class Placar {
 				
 	                    } 
 		}else {
-			throw new IllegalArgumentException ("Posição invalida\n"); 
+			throw new IllegalArgumentException ("Posicao invalida\n"); 
 		}			
 	}
 	
