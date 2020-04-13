@@ -1,11 +1,13 @@
+
+
 package bozo;
-import java.util.Calendar;
+import java.util.Calendar; // classe feita em aula e feita pelo professor delamaro
 
 public class Random {
 	private long p = 2147483648L;
 	private long m = 843314861L;
 	private long a = 453816693L;
-	private long xi = 1023L; // semente
+	private long xi = 1023L; // semente usada 
 	
 	@Override
 	public String toString() {
@@ -26,7 +28,7 @@ public class Random {
 		xi = Calendar.getInstance().getTimeInMillis() % p;
 	}
 	
-	public void setSemente(int k) {
+	public void setSemente(int k) { // achar a semente
 		xi = k % p;
 	}
 	

@@ -1,3 +1,6 @@
+
+
+
 package bozo;
 
 public class Placar {
@@ -18,7 +21,7 @@ public class Placar {
 			 switch (pos) {
 				 case 1:
 					 if (placarAtual[0] != -1)
-						 throw new IllegalArgumentException("Posição ocupada.");
+						 throw new IllegalArgumentException("Posicao ocupada.");
 	                 else {
 	                     int result = 0;
 	                     for(int i = 0; i<5; i++){
@@ -30,7 +33,7 @@ public class Placar {
 					break;
 				 case 2:
 						 if (placarAtual[1] != -1)
-							 throw new IllegalArgumentException("Posição ocupada.");
+							 throw new IllegalArgumentException("Posicao ocupada.");
 		                 else {
 		                     int result = 0;
 		                     for(int i = 0; i<5; i++){
@@ -43,7 +46,7 @@ public class Placar {
 					 
 				 case 3 :
 						 if (placarAtual[2] != -1)
-							 throw new IllegalArgumentException("Posição ocupada.");
+							 throw new IllegalArgumentException("Posicao ocupada.");
 		                 else {
 		                     int result = 0;
 		                     for(int i = 0; i<5; i++){
@@ -56,7 +59,7 @@ public class Placar {
 					break;
 				 case 4:
 					 if (placarAtual[3] != -1)
-						 throw new IllegalArgumentException("Posição ocupada.");
+						 throw new IllegalArgumentException("Posicao ocupada.");
 	                 else {
 	                     int result = 0;
 	                     for(int i = 0; i<5; i++){
@@ -69,7 +72,7 @@ public class Placar {
 					 break;
 				 case 5:
 					 if (placarAtual[4] != -1)
-						 throw new IllegalArgumentException("Posição ocupada.");
+						 throw new IllegalArgumentException("Posicao ocupada.");
 	                 else {
 	                     int result = 0;
 	                     for(int i = 0; i<5; i++){
@@ -82,7 +85,7 @@ public class Placar {
 					 
 				 case 6: // sequencia com 6 
 					 if (placarAtual[5] != -1)
-						 throw new IllegalArgumentException("Posição ocupada.");
+						 throw new IllegalArgumentException("Posicao ocupada.");
 	                 else {
 	                     int result = 0;
 	                     for(int i = 0; i<5; i++){
@@ -166,7 +169,7 @@ public class Placar {
 				
 	                    } 
 		}else {
-			throw new IllegalArgumentException ("Posição invalida\n"); 
+			throw new IllegalArgumentException ("Posicao invalida\n"); 
 		}			
 	}
 	
@@ -181,19 +184,21 @@ public class Placar {
 	}
 	
 	
-	 public String toString() {
+	 public String toString() { // desenha o placar todo
+		 
+		 
 		 String r = " "+(placarAtual[0] == -1 ? "(1)" : placarAtual[0])+"     " +
 	                "|   "+(placarAtual[6] == -1 ? "(7)" : placarAtual[6])+"     " +
 	                "|    "+(placarAtual[3] == -1 ? "(4)" : placarAtual[3])+"  \n" +
-	                " --------------------------\n" +
+	                " ------------------------------\n" +
 	                " "+(placarAtual[1] == -1 ? "(2)" : placarAtual[1])+"     " +
 	                "|    "+(placarAtual[7] == -1 ? "(8)" : placarAtual[7])+"    " +
 	                "|    "+(placarAtual[4] == -1 ? "(5)" : placarAtual[4])+"  \n" +
-	                " --------------------------\n" +
+	                " ------------------------------\n" +
 	                " "+(placarAtual[2] == -1 ? "(3)" : placarAtual[2])+"     " +
 	                "|   "+(placarAtual[8] == -1 ? "(9)" : placarAtual[8])+"     " +
 	                "|    "+(placarAtual[5] == -1 ? "(6)" : placarAtual[5])+"  \n" +
-	                "--------------------------\n" +
+	                "-------------------------------\n" +
 	                "        |    "+(placarAtual[9] == -1 ? "(10)" : placarAtual[9])+"    |\n" +
 	                "        +----------+ "; 
 	        return r;
