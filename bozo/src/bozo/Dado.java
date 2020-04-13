@@ -36,8 +36,61 @@ public class Dado {
 	}
 	
 	public String toString() {
-		String visaolados = " ";
-		
-		return visaolados; 
+		String visaolados = ""; 
+			switch (this.LadoCima) { // ver qual lado vai ser impresso
+			case 1:
+					visaolados += "+-----+\n"; 
+					visaolados += "|     |\n"; 
+					visaolados += "|  *  |\n"; 
+					visaolados += "|     |\n"; 
+					visaolados += "+-----+\n"; 
+				
+					break;
+				case 2: 
+					visaolados += "+-----+\n"; 
+					visaolados += "|    *|\n"; 
+					visaolados += "|     |\n"; 
+					visaolados += "|*    |\n"; 
+					visaolados += "+-----+\n"; 
+					
+					break;
+				case 3:
+					visaolados += "+-----+\n"; 
+					visaolados += "|    *|\n"; 
+					visaolados += "|  *  |\n"; 
+					visaolados += "|*    |\n"; 
+					visaolados += "+-----+\n"; 
+					
+					break;
+				case 4:
+					
+					visaolados += "+-----+\n"; 
+					visaolados += "|*   *|\n"; 
+					visaolados += "|     |\n"; 
+					visaolados += "|*   *|\n"; 
+					visaolados += "+-----+\n"; 
+					
+					break;
+				case 5:
+					visaolados += "+-----+\n"; 
+					visaolados += "|*   *|\n"; 
+					visaolados += "|  *  |\n"; 
+					visaolados += "|*   *|\n"; 
+					visaolados += "+-----+\n"; 
+					
+					break;
+				
+				case 6:
+					visaolados += "+-----+\n"; 
+					visaolados += "|*   *|\n"; 
+					visaolados += "|*   *|\n"; 
+					visaolados += "|*   *|\n"; 
+					visaolados += "+-----+\n"; 
+					break;
+				
+			}
+			
+			
+		return visaolados; // retorna tudo certo
 	}
 }
