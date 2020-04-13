@@ -48,23 +48,33 @@ public class RolaDados {
         return resultado;
     }
     
-    public String toString () {
+    public String toString () { // desenha cada caso
 
-        String result = " 1        2        3        4        5\n+-----+  +-----+  +-----+  +-----+  +-----+\n";
+        String result = " 1 ----- 2 ------ 3 ------ 4 ------ 5\n+-----+  +-----+  +-----+  +-----+  +-----+\n";
+        
         for(int i=0; i< 5; i++) {
-            if (dados[i].getLado() == 1) result +="|     |  ";
-            else if (dados[i].getLado() == 2 || dados[i].getLado() == 3) result+="|*    |  ";
-            else result+="|*   *|  ";
-            if (i == 4) result+="\n";
+            if (dados[i].getLado() == 1) 
+            	
+            	result +="|     |  ";
+            else if (dados[i].getLado() == 2 || dados[i].getLado() == 3) 
+            	result+="|*    |  ";
+            
+            else 
+            	result+="|*   *|  ";
+            
+            if (i == 4)            	
+            	result+="\n";
         }
 
         for(int i=0; i< 5; i++) {
-            if (dados[i].getLado() == 1 || dados[i].getLado() == 3 || dados[i].getLado() == 5) result+="|  *  |  ";
-            else if (dados[i].getLado() == 6) 
+            if (dados[i].getLado() == 1 || dados[i].getLado() == 3 || dados[i].getLado() == 5)
+            	result+="|  *  |  ";
+            else if (dados[i].getLado() == 6)  
             	result+="|*   *|  ";
             else
             	result+="|     |  ";
-            if (i == 4) result+="\n";
+            if (i == 4)
+            	result+="\n";
         }
 
         for(int i=0; i< 5; i++) {
@@ -74,8 +84,12 @@ public class RolaDados {
             if (i == 4) result+="\n";
         }
 
-        result+="+-----+  +-----+  +-----+  +-----+  +-----+\n";
+        result += "+-----+  +-----+  +-----+  +-----+  +-----+ \n";
+        
+        
+        
         return result;
+        
     }
     
     
