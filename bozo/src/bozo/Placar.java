@@ -11,10 +11,7 @@ public class Placar {
 	        }
 	   }
 	
-	public String toString() {
-		String result = " ";
-		return result;
-	}
+
 	
 	public void add(int []dado,int pos) {
 		if(pos > 0 && pos < 11) {
@@ -184,6 +181,22 @@ public class Placar {
 	}
 	
 	
-	
+	 public String toString() {
+		 String r = " "+(placarAtual[0] == -1 ? "(1)" : placarAtual[0])+"     " +
+	                "|   "+(placarAtual[6] == -1 ? "(7)" : placarAtual[6])+"     " +
+	                "|    "+(placarAtual[3] == -1 ? "(4)" : placarAtual[3])+"  \n" +
+	                " --------------------------\n" +
+	                " "+(placarAtual[1] == -1 ? "(2)" : placarAtual[1])+"     " +
+	                "|    "+(placarAtual[7] == -1 ? "(8)" : placarAtual[7])+"    " +
+	                "|    "+(placarAtual[4] == -1 ? "(5)" : placarAtual[4])+"  \n" +
+	                " --------------------------\n" +
+	                " "+(placarAtual[2] == -1 ? "(3)" : placarAtual[2])+"     " +
+	                "|   "+(placarAtual[8] == -1 ? "(9)" : placarAtual[8])+"     " +
+	                "|    "+(placarAtual[5] == -1 ? "(6)" : placarAtual[5])+"  \n" +
+	                "--------------------------\n" +
+	                "        |    "+(placarAtual[9] == -1 ? "(10)" : placarAtual[9])+"    |\n" +
+	                "        +----------+ "; 
+	        return r;
+	    }
 	
 }
