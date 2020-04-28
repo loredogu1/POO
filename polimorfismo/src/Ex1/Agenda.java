@@ -1,4 +1,4 @@
-package polimorfismo;
+package Ex1;
 
 /*
  * Crie uma agenda de contatos. Nessa agenda, contatos podem ser adicionados, removidos, ou pesquisados por nome ou por CPF/CNPJ.
@@ -8,26 +8,16 @@ package polimorfismo;
  *  A pessoa jurídica possui: CNPJ, nome, endereço, email, inscrição estadual, razão social, outros que você achar necessários.
  * */
 
-public class Ex1 {
+public class Agenda {
 	public String Nome;
 	public String Endereco;
 	public String Email;
 	
-}
-
-
-public class Pessoa extends Ex1{
-	public int Cpf;
-	public int DataNascimento;
-	public String EstadoCivil;
+	public void inseri() {
+		
+	}
 	
 }
 
 
-public class Empresa extends Ex1{
-	public int Cnpj;
-	public int InscricaoEstadual;
-	public int RazaoSocial;
-		
-}
 
