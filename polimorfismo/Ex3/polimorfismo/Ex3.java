@@ -1,10 +1,12 @@
+//igor guilherme pereira loredo
+// 11275071
+
 package polimorfismo;
 
 public class Ex3 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		System.out.println("Teste");
+		Circulo c1 = new Circulo();
 	}
-
 }
